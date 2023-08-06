@@ -23,7 +23,7 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Conheça o Curuça</h2>
+          <h2 className={classes.title}>Conheça o residencial Curuça</h2>
           <h5 className={classes.description}>
           Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuça são perfeitos para você e sua família, com Suíte e Sacada Grill. Não perca essa oportunidade!
           </h5>
@@ -59,7 +59,7 @@ export default function ProductSection() {
                 />
             <InfoArea
               title="Sacada Grill"
-              description="Com Varanda Grill, disponíveis em opções de 2 ou 3 Dormitórios Escolha entre as metragens de 53 m², 66 m², 67 m² e 69 m², todas com ótimos espaços para você aproveitar."
+              description="Apartamentos com sacada Grill, opções com 2 ou 3 dormitórios, planta com opção de 53 m², 66m², 76 m² 3 79 m², escolha a melhor opçao que atende sua família."
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -76,7 +76,7 @@ export default function ProductSection() {
                 />
             <InfoArea
               title="Facilidades com a Caixa Econômica"
-              description="A entrada é facilitada, tornando o sonho da casa própria ainda mais acessível.
+              description="Entrada facilitada, juros mais baixos do mercado imobiliário, tornando seu sonho de comprar seu apartamento mais acessível.
               Não deixe de conferir os valores e garantir o seu lugar no Residencial Curuça. Saiba mais detalhes e entre em contato conosco para mais informações."
               icon={Fingerprint}
               vertical
