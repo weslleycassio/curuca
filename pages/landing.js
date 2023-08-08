@@ -72,8 +72,8 @@ export default function LandingPage(props) {
       <Parallax  filter responsive image="/img/curucanovo.jpeg" >
         <div  className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8}>
-              <h1 className={classes.title}>O empreendimento que você estava esperando</h1>
+            <GridItem xs={12} sm={12} md={0}>
+              <h1 className={classes.title}>O empreendimento <br></br>que você estava esperando</h1>
               <h4>
               Seu apartamento na região mais privilegiada de Mauá
               </h4>

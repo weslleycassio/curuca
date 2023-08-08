@@ -37,7 +37,7 @@ h6 {
   margin-bottom: 10px;
 }
 h1 {
-  font-size: 3.3125rem;
+  font-size: 2rem;
   line-height: 1.15em;
   color: black;
 }
@@ -107,13 +107,15 @@ a {
     text-decoration: none;
   }
 }
-
+@media (max-width: 768px) {
 label {
   font-size: 14px;
   line-height: 1.42857;
   color: $checkboxes-text-color;
   font-weight: 400;
 }
+}
+
 small {
   font-size: 75%;
   color: #777;
