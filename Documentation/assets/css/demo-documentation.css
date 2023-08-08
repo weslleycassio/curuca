@@ -182,6 +182,12 @@ body{
     color: #333333;
 }
 
+@media (max-width: 1200px) {
+   section {
+    width: 1000px;
+   }
+   } 
+
 .fixed-section{
     top: 90px;
     max-height: 80vh;

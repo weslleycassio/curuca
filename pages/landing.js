@@ -72,7 +72,7 @@ export default function LandingPage(props) {
       <Parallax  filter responsive image="/img/curucanovo.jpeg" >
         <div  className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem xs={12} sm={12} md={8}>
               <h1 className={classes.title}>O empreendimento que você estava esperando</h1>
               <h4>
               Seu apartamento na região mais privilegiada de Mauá
@@ -124,7 +124,7 @@ export default function LandingPage(props) {
           <h2 className={classes.title} style={{color:'#3C4858'}}>Localização</h2>
           
           <h5 className={classes.description}>
-          Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuça são perfeitos para você e sua família, com Suíte e Sacada Grill. Não perca essa oportunidade!
+          Venha morar na Vila Guarani em Mauá! Os apartamentos do residencial Curuçá são perfeitos para você e sua família, com suíte e sacada Grill. Não perca essa oportunidade!
           </h5>
           
         </GridItem>
