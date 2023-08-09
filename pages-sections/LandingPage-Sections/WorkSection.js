@@ -6,6 +6,7 @@ import CustomInput from "/components/CustomInput/CustomInput.js";
 import Button from "/components/CustomButtons/Button.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 
+
 const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
@@ -21,7 +22,8 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             Saiba como realizar o sonho de morar em um apartamento novo com toda a qualidade de vida que você deseja no centro de Mauá
           </h4>
-          <form action="https://formsubmit.co/weslleycassio18@gmail.com" method="POST">
+          
+          <form action="https://api.sheetmonkey.io/form/aM9okd1BnYyLW26TNWo5Xg" method="POST">
             <GridContainer>
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInput
