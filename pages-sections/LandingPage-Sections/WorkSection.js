@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
 import Button from "/components/CustomButtons/Button.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 import CustomInputEmail from "../../components/CustomInput/CustomInputEmail";
 import CustomInputTelefone from "../../components/CustomInput/CustomInputTelefone";
 import CustomInputNome from "../../components/CustomInput/CustomInputNome";
-import Script from "next/script";
 
+// ... outras importações
+
+import Script from "next/script";
 
 const useStyles = makeStyles(styles);
 
