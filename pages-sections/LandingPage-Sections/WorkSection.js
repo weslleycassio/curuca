@@ -22,11 +22,33 @@ export default function WorkSection() {
     telefone: "",
   });
 
-  const onChangeInputs = e => setConteudo( {...conteudo, [e.target.name] : e.target.value});
+  const onChangeInputs = (e) =>
+    setConteudo({ ...conteudo, [e.target.name]: e.target.value });
 
-    const submitContact = async (event) => {
+  const submitContact = async (event) => {
     event.preventDefault();
-    alert("Formulário enviado com sucesso");
+    const formData = new FormData();
+    formData.append('nome', conteudo.nome);
+    formData.append('email', conteudo.email);
+    formData.append('telefone', conteudo.telefone);
+
+    try {
+      const response = await fetch(
+        'https://api.sheetmonkey.io/form/aM9okd1BnYyLW26TNWo5Xg',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      );
+
+      if (response.ok) {
+        alert('Formulário enviado com sucesso');
+      } else {
+        alert('Erro ao enviar o formulário');
+      }
+    } catch (error) {
+      alert('Erro ao enviar o formulário');
+    }
   };
 
   return (
@@ -37,28 +59,22 @@ export default function WorkSection() {
             Fale com um consultor sobre o residencial Curuça
           </h2>
           <h4 className={classes.description}>
-            Saiba como realizar o sonho de morar em um apartamento novo com toda a qualidade de vida que você deseja no centro de Mauá
+            Saiba como realizar o sonho de morar em um apartamento novo com toda
+            a qualidade de vida que você deseja no centro de Mauá
           </h4>
-          
-          <form  action="https://api.sheetmonkey.io/form/aM9okd1BnYyLW26TNWo5Xg" method="POST">
+
+          <form onSubmit={submitContact}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={12}>
-              <div>
-                <label>Name</label>
-                 <input type="text" name="nome" onChange={onChangeInputs} value={conteudo.nome} />
-             </div>
                 <CustomInputNome
-                labelText="Nome Completo"
-                name="nome"
-                onChange={onChangeInputs}
-                value={conteudo.nome}
-                formControlProps={{
-                  fullWidth: true,
-                }}
-                >
-                      
-                    </CustomInputNome>
-                
+                  labelText="Nome Completo"
+                  name="nome"
+                  onChange={onChangeInputs}
+                  value={conteudo.nome}
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                />
               </GridItem>
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInputEmail
@@ -82,10 +98,10 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true,
                   }}
-                  />
+                />
               </GridItem>
               <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
-                <Button  type="submit" color="warning">
+                <Button type="submit" color="warning">
                   Quero Saber Tudo!
                 </Button>
               </GridItem>
