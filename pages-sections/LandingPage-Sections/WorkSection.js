@@ -32,8 +32,10 @@ export default function WorkSection() {
     formData.append('email', conteudo.email);
     formData.append('telefone', conteudo.telefone);
 
+    
     try {
       const response = await fetch(
+        
         'https://api.sheetmonkey.io/form/aM9okd1BnYyLW26TNWo5Xg',
         {
           method: 'POST',
@@ -71,6 +73,7 @@ export default function WorkSection() {
                   name="nome"
                   onChange={onChangeInputs}
                   value={conteudo.nome}
+                  type="nome"
                   formControlProps={{
                     fullWidth: true,
                   }}
