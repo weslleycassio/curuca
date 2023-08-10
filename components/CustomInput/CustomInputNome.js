@@ -13,12 +13,14 @@ import styles from "/styles/jss/nextjs-material-kit/components/customInputStyle.
 
 const useStyles = makeStyles(styles);
 
-export default function CustomInput(props) {
+export default function CustomInputNome(props) {
   const classes = useStyles();
   const {
     formControlProps,
     labelText,
+    id,
     labelProps,
+    inputProps,
     error,
     white,
     inputRootCustomClasses,
@@ -64,7 +66,6 @@ export default function CustomInput(props) {
       ) : null}
       <Input
         classes={{
-          input: inputClasses,
           root: marginTop,
           disabled: classes.disabled,
           underline: underlineClasses
@@ -74,7 +75,7 @@ export default function CustomInput(props) {
   );
 }
 
-CustomInput.propTypes = {
+CustomInputNome.propTypes = {
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   formControlProps: PropTypes.object,
