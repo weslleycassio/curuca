@@ -24,7 +24,8 @@ export default function CustomInputEmail(props) {
     error,
     white,
     inputRootCustomClasses,
-    success
+    success,
+    onChange
   } = props;
 
   const labelClasses = classNames({
@@ -71,6 +72,8 @@ export default function CustomInputEmail(props) {
           disabled: classes.disabled,
           underline: underlineClasses
         }}
+        onChange={onChange}  
+        {...inputProps}
       />
     </FormControl>
   );

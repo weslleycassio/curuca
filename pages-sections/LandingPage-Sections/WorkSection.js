@@ -8,10 +8,6 @@ import CustomInputEmail from "../../components/CustomInput/CustomInputEmail";
 import CustomInputTelefone from "../../components/CustomInput/CustomInputTelefone";
 import CustomInputNome from "../../components/CustomInput/CustomInputNome";
 
-// ... outras importações
-
-import Script from "next/script";
-
 const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
@@ -23,27 +19,46 @@ export default function WorkSection() {
     telefone: "",
   });
 
-  const onChangeInputs = (e) =>
-    setConteudo({ ...conteudo, [e.target.name]: e.target.value });
+  const onNomeChange = (e) => {
+    setConteudo({ ...conteudo, nome: e.target.value });
+    console.log("onNomeChange foi chamado com valor:", e.target.value);
+  };
 
-  const submitContact = async (event) => {
-    event.preventDefault();
+  const onEmailChange = (e) => {
+    setConteudo({ ...conteudo, email: e.target.value });
+    console.log("onEmailChange foi chamado com valor:", e.target.value);
+  };
+
+  const onTelefoneChange = (e) => {
+    setConteudo({ ...conteudo, telefone: e.target.value });
+    console.log("onTelefoneChange foi chamado com valor:", e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const  conteudoJson =  JSON.stringify(conteudo);
+    console.log("Conteudo   "  + conteudoJson)
     const formData = new FormData();
     formData.append('nome', conteudo.nome);
     formData.append('email', conteudo.email);
     formData.append('telefone', conteudo.telefone);
+    
 
     try {
       const response = await fetch(
-        'https://api.sheetmonkey.io/form/aM9okd1BnYyLW26TNWo5Xg',
+        'https://curuca.onrender.com/addRow',
         {
           method: 'POST',
-          body: formData,
+          headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin':'*',
+          },
+          body: JSON.stringify(Object.fromEntries(formData))
         }
       );
-
+        
       if (response.ok) {
-        alert('Formulário enviado com sucesso');
+        alert('Formulário enviado com sucesso ');
       } else {
         alert('Erro ao enviar o formulário');
       }
@@ -64,26 +79,29 @@ export default function WorkSection() {
             a qualidade de vida que você deseja no centro de Mauá
           </h4>
 
-          <form onSubmit={submitContact}>
+          <form onSubmit={handleSubmit}    >
+            
             <GridContainer>
+              
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInputNome
                   labelText="Nome Completo"
                   name="nome"
-                  onChange={onChangeInputs}
+                  onChange={onNomeChange}
                   value={conteudo.nome}
                   formControlProps={{
                     fullWidth: true,
                   }}
                 />
+           
               </GridItem>
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInputEmail
                   labelText="E-mail"
                   name="email"
-                  onChange={onChangeInputs}
-                  value={conteudo.email}
+                  onChange={onEmailChange}
                   type="email"
+                  value={conteudo.email}
                   formControlProps={{
                     fullWidth: true,
                   }}
@@ -94,7 +112,7 @@ export default function WorkSection() {
                   labelText="Telefone"
                   type="tel"
                   name="telefone"
-                  onChange={onChangeInputs}
+                  onChange={onTelefoneChange}
                   value={conteudo.telefone}
                   formControlProps={{
                     fullWidth: true,
@@ -112,4 +130,4 @@ export default function WorkSection() {
       </GridContainer>
     </div>
   );
-}
+                }
