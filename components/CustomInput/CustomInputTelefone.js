@@ -21,7 +21,8 @@ function CustomInputTelefone(props) {
     success,
     white,
     inputRootCustomClasses,
-    onChange 
+    onChange,
+    required
   } = props;
 
   const labelClasses = classNames({
@@ -65,6 +66,7 @@ function CustomInputTelefone(props) {
           underline: underlineClasses,
         }}
         onChange={onChange}
+        required
         {...inputProps}
       />
     </FormControl>

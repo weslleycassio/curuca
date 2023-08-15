@@ -131,11 +131,11 @@ export default function LandingPage(props) {
           </GridContainer>
           <GridContainer justify="center"> 
 
-          <Grid xs={12} sm={12} md={4}>
+          <Grid xs={10} sm={6} md={4}>
           
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.54160927315456!2d-46.44864448413127!3d-23.66524516730975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1685062902438!5m2!1spt-BR!2sus" 
-                  width="400" 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.1364269155135!2d-46.45080681120912!3d-23.666198444681985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x654442a5c09aadc9%3A0xfda6367f6cf0b6ef!2sResidencial%20Curu%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1692117106894!5m2!1spt-BR!2sbr" 
+                  width="300" 
                   height="300" 
                   style={{border:0}} 
                   allowfullscreen="" 

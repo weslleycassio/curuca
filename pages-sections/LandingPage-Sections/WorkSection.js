@@ -36,6 +36,17 @@ export default function WorkSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (
+      conteudo.name
+       === '' || 
+      conteudo.email
+       === ''|| 
+      conteudo.telefone
+      === ''
+       ) {
+            alert('Por favor, preencha todos os campos obrigatórios.');
+          } 
+
     const  conteudoJson =  JSON.stringify(conteudo);
     console.log("Conteudo   "  + conteudoJson)
     const formData = new FormData();
@@ -58,7 +69,7 @@ export default function WorkSection() {
       );
         
       if (response.ok) {
-        alert('Formulário enviado com sucesso ');
+        window.location.href = "https://dadosenviados.netlify.app"; 
       } else {
         alert('Erro ao enviar o formulário');
       }
@@ -84,14 +95,15 @@ export default function WorkSection() {
             <GridContainer>
               
               <GridItem xs={12} sm={12} md={12}>
-                <CustomInputNome
+                <CustomInputNome 
                   labelText="Nome Completo"
                   name="nome"
                   onChange={onNomeChange}
                   value={conteudo.nome}
                   formControlProps={{
-                    fullWidth: true,
+                  fullWidth: true,
                   }}
+                  
                 />
            
               </GridItem>
@@ -100,6 +112,7 @@ export default function WorkSection() {
                   labelText="E-mail"
                   name="email"
                   onChange={onEmailChange}
+                  required
                   type="email"
                   value={conteudo.email}
                   formControlProps={{
@@ -113,6 +126,7 @@ export default function WorkSection() {
                   type="tel"
                   name="telefone"
                   onChange={onTelefoneChange}
+                  required
                   value={conteudo.telefone}
                   formControlProps={{
                     fullWidth: true,

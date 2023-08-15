@@ -33,8 +33,9 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.youtube.com/watch?v=jk_T3I95d6s&list=RDEMllRsihXH6ibsIkOWaZX1Ig&start_radio=1"
+                
                 className={classes.block}
+                a href="https://www.jirehimoveis.com.br/"
                 target="_blank"
               >
                 Sobre Nós
@@ -43,7 +44,7 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} por ImoTech
+          &copy; {1900 + new Date().getYear()} Jireh Imóveis
         </div>
       </div>
     </footer>
