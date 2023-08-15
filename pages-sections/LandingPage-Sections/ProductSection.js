@@ -25,7 +25,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Conheça o Residencial Curuçá</h2>
           <h5 className={classes.description}>
-          Venha morar na Vila Guarani em Mauá! Os apartamentos do residencial Curuçá são perfeitos para você e sua família, com suíte e varanda grill. Não perca essa oportunidade!
+          Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuçá são perfeitos para você e sua família, com suíte e varanda grill. Não perca essa oportunidade!
           </h5>
         </GridItem>
       </GridContainer>

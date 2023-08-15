@@ -124,7 +124,7 @@ export default function LandingPage(props) {
           <h2 className={classes.title} style={{color:'#3C4858'}}>Localização</h2>
           
           <h5 className={classes.description}>
-          Venha morar na Vila Guarani em Mauá! Os apartamentos do residencial Curuçá são perfeitos para você e sua família, com suíte e sacada Grill. Não perca essa oportunidade!
+          Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuçá são perfeitos para você e sua família, com suíte e sacada Grill. Não perca essa oportunidade!
           </h5>
           
         </GridItem>
