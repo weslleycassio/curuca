@@ -73,7 +73,7 @@ export default function LandingPage(props) {
         <div  className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={0}>
-              <h1 className={classes.title}>O empreendimento <br></br>que você estava esperando</h1>
+              <h1 className={classes.title}>O EMPREENDIMENTO<br></br>QUE VOCÊ ESTAVA ESPERANDO</h1>
               <h4>
               Seu apartamento na região mais privilegiada de Mauá
               </h4>
