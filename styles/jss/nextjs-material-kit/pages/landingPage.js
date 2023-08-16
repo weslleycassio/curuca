@@ -10,8 +10,10 @@ const landingPageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
+    textAlign: 'left',
+    margin: '-0px', 
+    fontSize: '3vw',
+    // minHeight: "32px",
     color: "#000",
     textDecoration: "none"
   },
@@ -20,6 +22,15 @@ const landingPageStyle = {
     maxWidth: "500px",
     margin: "10px auto 0"
   },
+  
+  
+  responsiveSubtitle: {
+    fontSize: '2vw', 
+    textAlign: 'left',// Tamanho do subtítulo responsivo em vw
+    margin: '0px', // Remover margem para o subtítulo responsivo
+    
+  },
+
   main: {
     background: "#FFFFFF",
     position: "relative",

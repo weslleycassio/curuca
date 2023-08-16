@@ -73,26 +73,38 @@ export default function LandingPage(props) {
         <div  className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={0}>
-              <h1 className={classes.title}>O EMPREENDIMENTO<br></br>QUE VOCÊ ESTAVA ESPERANDO</h1>
-              <h4>
-              Seu apartamento na região mais privilegiada de Mauá
-              </h4>
+              <h1 className={classes.title}>O EMPREENDIMENTO QUE <br/> VOCÊ ESTAVA ESPERANDO</h1>
+              <h4 className={classes.responsiveSubtitle}>
+              Seu apartamento na região mais  privilegiada <br/>  de Mauá
+            </h4>
               <br />
-              {/* <Button
+              <Button
                 color="warning"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://wa.me/5511996430891"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Conheça
-              </Button> */}
-              <GridItem xs={12} sm={2} className={classes.marginLeft}>
+                  WhatsApp
+                <img
+                src="img/faces/wpp.png" 
+                alt="wpp"
+                width={30}
+                height={30}
+                
+                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                />
+              
+              </Button>
+
+              {/* <GridItem xs={12} sm={2} md={2} >
                 <Button
                 color="warning"
                 href="https://wa.me/5511996430891"
-                size="lg">
+                size="md"
+                
+                
+                >
 
               <h4>WhatsApp</h4>
               <img
@@ -104,7 +116,7 @@ export default function LandingPage(props) {
                 className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
                 </Button>
-            </GridItem>
+            </GridItem> */}
             </GridItem>
           </GridContainer>
         </div>
