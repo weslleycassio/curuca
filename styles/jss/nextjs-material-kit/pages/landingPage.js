@@ -9,14 +9,13 @@ const landingPageStyle = {
   title: {
     
     
-    // display: "inline-block",
-    // position: "relative",
-    lineHeight: '1.1',
-    marginRight: "6vw",
+    display: "inline-block",
+    position: "relative",
+    lineHeight: '1',
+    marginRight: "5.2vw",
     textAlign: 'left',
-    marginTop: ".4925rem",
-    fontSize: '5.2vw',
-    minHeight: "60px",
+    marginTop: "2.5vw",
+    fontSize: '6vw',
     color: "#000",
     fontFamily: `"Roboto Slab", "Times New Roman", serif`,
     textDecoration: "none",
@@ -36,15 +35,20 @@ const landingPageStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+
+  
   
   
   responsiveSubtitle: {
-    fontSize: '4vw', 
+    fontSize: '3vw', 
     textAlign: 'left',
+    lineHeight: '1.2',
     marginRight: "6.8vw",
-    margin: '0px', // Remover margem para o subtítulo responsivo
+    margin: '3px', 
     
   },
+
+  
 
   main: {
     background: "#FFFFFF",

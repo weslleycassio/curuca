@@ -84,14 +84,19 @@ export default function LandingPage(props) {
               <h4 className={classes.responsiveSubtitle}>
               Seu apartamento na região mais  privilegiada de Mauá
             </h4>
+          
             
-            <Button 
-                color="warning"
-                size="sm"
-                href="https://wa.me/5511996430891"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+          </GridItemT>
+            <GridItem xs={12} sm={12} md={0}>
+
+              <Button 
+              color="warning"
+              size="sm"
+              href="https://wa.me/5511996430891"
+              target="_blank"
+              rel="noopener noreferrer"
+       
+>
                   WhatsApp
                 <img
                 src="img/faces/wpp.png" 
@@ -103,11 +108,6 @@ export default function LandingPage(props) {
                 />
               
               </Button>
-          </GridItemT>
-            <GridItem xs={12} sm={12} md={0}>
-    
-              <br />
-          
 
               {/* <GridItem xs={12} sm={2} md={2} >
                 <Button
