@@ -2,31 +2,46 @@ import { container, title } from "/styles/jss/nextjs-material-kit.js";
 
 const landingPageStyle = {
   container: {
-    zIndex: "12",
+    zIndex: "1",
     color: "#FFFFFF",
     ...container
   },
   title: {
-    ...title,
-    display: "inline-block",
-    position: "relative",
+    
+    
+    // display: "inline-block",
+    // position: "relative",
+    lineHeight: '1.1',
+    marginRight: "6vw",
     textAlign: 'left',
-    margin: '-0px', 
-    fontSize: '3vw',
-    // minHeight: "32px",
+    marginTop: ".4925rem",
+    fontSize: '5.2vw',
+    minHeight: "60px",
     color: "#000",
-    textDecoration: "none"
+    fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+    textDecoration: "none",
+    background: 'rgba(255, 140, 0, 0.5)',
+    transition: "all 150ms ease 0s",
   },
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
     margin: "10px auto 0"
   },
+
+  titleOne: {
+    ...title,
+    marginBottom: "1rem",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none"
+  },
   
   
   responsiveSubtitle: {
-    fontSize: '2vw', 
-    textAlign: 'left',// Tamanho do subtítulo responsivo em vw
+    fontSize: '4vw', 
+    textAlign: 'left',
+    marginRight: "6.8vw",
     margin: '0px', // Remover margem para o subtítulo responsivo
     
   },

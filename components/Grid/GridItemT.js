@@ -7,10 +7,10 @@ import Grid from "@material-ui/core/Grid";
 
 const styles = {
   grid: {
-    width: "100%",
+    width: "60%",
     height: "100%",
     paddingRight: "10px",
-    paddingLeft: "15px",
+    paddingLeft: "5px",
     flexBasis: "auto",
   },
 };

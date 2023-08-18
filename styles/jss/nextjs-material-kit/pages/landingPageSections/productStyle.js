@@ -12,6 +12,13 @@ const productStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+  titleOne: {
+    ...title,
+    marginBottom: "1rem",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none"
+  },
   description: {
     color: "#999"
   }

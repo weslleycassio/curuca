@@ -11,6 +11,7 @@ import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
+import GridItemT from "/components/Grid/GridItemT.js";
 import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
@@ -69,18 +70,24 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
+      
       <Parallax  filter responsive image="/img/curucanovo.jpeg" >
         <div  className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={0}>
-              <h1 className={classes.title}>O EMPREENDIMENTO QUE <br/> VOCÊ ESTAVA ESPERANDO</h1>
+          <GridContainer >
+          <GridItemT xs={12} sm={12} md={0} >
+          <h1 className={classes.title}>O RESIDENCIAL QUE VOCÊ ESTAVA ESPERANDO</h1>
+          </GridItemT>
+          <GridItemT xs={12} sm={12} md={0} >
+          </GridItemT>
+          <GridItemT xs={12} sm={12} md={0} >
+
               <h4 className={classes.responsiveSubtitle}>
-              Seu apartamento na região mais  privilegiada <br/>  de Mauá
+              Seu apartamento na região mais  privilegiada de Mauá
             </h4>
-              <br />
-              <Button
+            
+            <Button 
                 color="warning"
-                size="lg"
+                size="sm"
                 href="https://wa.me/5511996430891"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,6 +103,11 @@ export default function LandingPage(props) {
                 />
               
               </Button>
+          </GridItemT>
+            <GridItem xs={12} sm={12} md={0}>
+    
+              <br />
+          
 
               {/* <GridItem xs={12} sm={2} md={2} >
                 <Button
@@ -133,7 +145,7 @@ export default function LandingPage(props) {
         <GridItem justify="center" style={{color:'#3C4858'}} xs={12} sm={12} md={8} >
           <div id='Localizacao'></div> 
           <div><h3><br></br></h3></div>
-          <h2 className={classes.title} style={{color:'#3C4858'}}>Localização</h2>
+          <h2 className={classes.titleOne} style={{color:'#3C4858'}}>Localização</h2>
           
           <h5 className={classes.description}>
           Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuçá são perfeitos para você e sua família, com suíte e sacada Grill. Não perca essa oportunidade!
@@ -161,7 +173,7 @@ export default function LandingPage(props) {
 <GridItem justify="center" style={{color:'#3C4858'}} xs={12} sm={12} md={8} >
   <div id='Plantas'></div> 
   <div><h3><br></br></h3></div>
-  <h2 className={classes.title} style={{color:'#3C4858'}}>Plantas</h2>
+  <h2 className={classes.titleOne} style={{color:'#3C4858'}}>Plantas</h2>
   <h5 className={classes.description}>
   O Residencial Curuça oferece uma variedade de apartamentos, com seis unidades por andar e dois elevadores. São disponibilizados cinco tipos de apartamentos, com tamanhos que variam de 53m² a 139m². As plantas foram projetadas para proporcionar conforto e praticidade aos moradores, atendendo às diferentes necessidades e preferências.
   </h5>
