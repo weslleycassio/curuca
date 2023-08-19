@@ -71,7 +71,7 @@ export default function LandingPage(props) {
         {...rest}
       />
       
-      <Parallax filter   image="/img/curucanovodois.png" >
+      <Parallax filter   image="/img/curucanovo.jpeg" >
      
         <div  className={classes.container}>
           <GridContainer> 
