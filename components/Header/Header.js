@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp'; 
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -22,9 +23,11 @@ const useStyles = makeStyles(styles);
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
+      
     }
     return function cleanup() {
       if (props.changeColorOnScroll) {

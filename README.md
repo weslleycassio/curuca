@@ -133,7 +133,7 @@ nextjs-material-kit
 │   ├── Grid
 │   │   ├── GridContainer.js
 │   │   └── GridItem.js
-│   ├── Header
+│   ├── 
 │   │   ├── Header.js
 │   │   └── HeaderLinks.js
 │   ├── InfoArea

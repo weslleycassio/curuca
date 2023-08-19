@@ -1,12 +1,12 @@
 const parallaxStyle = (theme) => ({
   parallax: {
-    height: "90vh",
-    maxHeight: "1000px",
+    height: "50vh",
+    maxHeight: "100vh",
     overflow: "hidden",
-    position: "relative",
-    backgroundPosition: "center top",
+    position: "center",
+    backgroundPosition: "left",
     backgroundSize: "cover",
-    margin: "0",
+    margin: "",
     padding: "0",
     border: "0",
     display: "flex",
@@ -32,7 +32,7 @@ const parallaxStyle = (theme) => ({
   },
   parallaxResponsive: {
     [theme.breakpoints.down("md")]: {
-      minHeight: "660px",
+      minHeight: "50vh",
     },
   },
 });

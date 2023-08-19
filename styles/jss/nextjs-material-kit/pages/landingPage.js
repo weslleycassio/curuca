@@ -6,26 +6,34 @@ const landingPageStyle = {
     color: "#FFFFFF",
     ...container
   },
+
+  containerTwo: {
+    width: "100%"
+   
+  },
+
   title: {
     
     
     display: "inline-block",
     position: "relative",
     lineHeight: '1',
-    marginRight: "5.2vw",
-    textAlign: 'left',
-    marginTop: "2.5vw",
-    fontSize: '6vw',
+    // marginRight: "7.2vw",
+
+    fontSize: '5vh',
     color: "#000",
     fontFamily: `"Roboto Slab", "Times New Roman", serif`,
     textDecoration: "none",
-    background: 'rgba(255, 140, 0, 0.5)',
-    transition: "all 150ms ease 0s",
+   
   },
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
     margin: "10px auto 0"
+  },
+
+  customParallax: {
+    // height: '300px' /* Ajuste a altura conforme necessário */
   },
 
   titleOne: {
@@ -36,6 +44,9 @@ const landingPageStyle = {
     textDecoration: "none"
   },
 
+  fullWidthGridContainer: {
+    width: '100%'
+  },
   
   
   

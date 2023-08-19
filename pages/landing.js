@@ -71,22 +71,22 @@ export default function LandingPage(props) {
         {...rest}
       />
       
-      <Parallax  filter responsive image="/img/curucanovo.jpeg" >
+      <Parallax filter   image="/img/curucanovo.jpeg" >
+     
         <div  className={classes.container}>
-          <GridContainer >
-          <GridItemT xs={12} sm={12} md={0} >
+          <GridContainer> 
+          <GridItemT xs={12} sm={12} md={12} >
           <h1 className={classes.title}>O RESIDENCIAL QUE VOCÊ ESTAVA ESPERANDO</h1>
           </GridItemT>
-          <GridItemT xs={12} sm={12} md={0} >
-          </GridItemT>
-          <GridItemT xs={12} sm={12} md={0} >
+          
+          {/* <GridItem xs={12} sm={12} md={0} >
 
               <h4 className={classes.responsiveSubtitle}>
               Seu apartamento na região mais  privilegiada de Mauá
             </h4>
           
             
-          </GridItemT>
+          </GridItem> */}
             <GridItem xs={12} sm={12} md={0}>
 
               <Button 
@@ -131,8 +131,13 @@ export default function LandingPage(props) {
             </GridItem> */}
             </GridItem>
           </GridContainer>
+          
         </div>
+        <div className={classes.containerTwo}>
+      
+      </div>
       </Parallax >
+     
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div id='Curuca' className={classes.container}>
           <ProductSection />
