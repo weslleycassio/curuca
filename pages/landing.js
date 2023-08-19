@@ -71,7 +71,7 @@ export default function LandingPage(props) {
         {...rest}
       />
       
-      <Parallax filter   image="/img/curucanovo.jpeg" >
+      <Parallax filter   image="/img/curucanovodois.png" >
      
         <div  className={classes.container}>
           <GridContainer> 
@@ -79,14 +79,14 @@ export default function LandingPage(props) {
           <h1 className={classes.title}>O RESIDENCIAL QUE VOCÊ ESTAVA ESPERANDO</h1>
           </GridItemT>
           
-          {/* <GridItem xs={12} sm={12} md={0} >
+          <GridItem xs={12} sm={12} md={0} >
 
               <h4 className={classes.responsiveSubtitle}>
               Seu apartamento na região mais  privilegiada de Mauá
             </h4>
           
             
-          </GridItem> */}
+          </GridItem>
             <GridItem xs={12} sm={12} md={0}>
 
               <Button 

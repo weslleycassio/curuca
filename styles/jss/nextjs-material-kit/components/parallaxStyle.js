@@ -1,12 +1,12 @@
 const parallaxStyle = (theme) => ({
   parallax: {
-    height: "50vh",
-    maxHeight: "100vh",
+    height: "55vh",
+    maxHeight: "55vh",
     overflow: "hidden",
     position: "center",
-    backgroundPosition: "left",
+    backgroundPosition: "20% 60%",
     backgroundSize: "cover",
-    margin: "",
+    marginLeft: "",
     padding: "0",
     border: "0",
     display: "flex",

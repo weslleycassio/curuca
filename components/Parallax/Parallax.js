@@ -20,11 +20,11 @@ export default function Parallax(props) {
   // }
   const [transform, setTransform] = React.useState("translate3d(0,0px,0)");
   React.useEffect(() => {
-    if (window.innerWidth >= 400) {
+    if (window.innerWidth >= 600) {
       window.addEventListener("scroll", resetTransform);
     }
     return function cleanup() {
-      if (window.innerWidth >= 400) {
+      if (window.innerWidth >= 600) {
         window.removeEventListener("scroll", resetTransform);
       }
     };
