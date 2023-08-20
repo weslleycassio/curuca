@@ -17,6 +17,8 @@ import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 import Icon from "@material-ui/core/Icon";
 import { useRef } from 'react';
+import Head from 'next/head';      
+
 
 
 
@@ -31,7 +33,6 @@ import { Grid, Typography } from "@material-ui/core";
 import PlantasCarousel from "../pages-sections/Components-Sections/PlantsCarrousel";
 
 
-// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const dashboardRoutes = [];
 
@@ -57,6 +58,13 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div id='Inicio'>
+      <Head>
+        <title>Curuça - Jireh Imóveis</title>
+        <meta name="description" content="Conheça o imóvel residencial Curuça, localizado na região de Mauá e financiado pelo programa Minha Casa, Minha Vida." />
+        <meta property="og:title" content="Curuça - Jireh Imóveis" />
+        <meta property="og:description" content="Conheça o imóvel residencial Curuça, localizado na região de Mauá e financiado pelo programa Minha Casa, Minha Vida." />
+        <meta property="og:url" content="URL_DA_PAGINA" />
+      </Head> 
       < Header
         color="transparent"
         routes={dashboardRoutes}
@@ -75,7 +83,7 @@ export default function LandingPage(props) {
      
         <div  className={classes.container}>
           <GridContainer> 
-          <GridItemT xs={12} sm={12} md={12} >
+          <GridItemT emTxs={12} sm={12} md={12} >
           <h1 className={classes.title}>O RESIDENCIAL QUE VOCÊ ESTAVA ESPERANDO</h1>
           </GridItemT>
           
