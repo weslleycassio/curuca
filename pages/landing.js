@@ -79,11 +79,11 @@ export default function LandingPage(props) {
         {...rest}
       />
       
-      <Parallax filter   image="/img/curucanovo.jpeg" >
+      <Parallax filter responsive  image="/img/curucanovo.jpeg" >
      
         <div  className={classes.container}>
           <GridContainer> 
-          <GridItemT emTxs={12} sm={12} md={12} >
+          <GridItemT xs={12} sm={12} md={12} >
           <h1 className={classes.title}>O RESIDENCIAL QUE VOCÊ ESTAVA ESPERANDO</h1>
           </GridItemT>
           
@@ -94,15 +94,13 @@ export default function LandingPage(props) {
             </h4>
           
             
-          </GridItem>
             <GridItem xs={12} sm={12} md={0}>
 
               <Button 
+              href="https://wa.me/5511996430891"
               color="warning"
               size="sm"
-              href="https://wa.me/5511996430891"
-              target="_blank"
-              rel="noopener noreferrer"
+  
        
 >
                   WhatsApp
@@ -125,9 +123,9 @@ export default function LandingPage(props) {
                 
                 
                 >
-
-              <h4>WhatsApp</h4>
-              <img
+                
+                <h4>WhatsApp</h4>
+                <img
                 src="img/faces/wpp.png" 
                 alt="wpp"
                 width={50}
@@ -137,6 +135,8 @@ export default function LandingPage(props) {
                 />
                 </Button>
             </GridItem> */}
+            
+                </GridItem>
             </GridItem>
           </GridContainer>
           
