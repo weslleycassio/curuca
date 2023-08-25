@@ -22,6 +22,7 @@ function CustomInputTelefone(props) {
     white,
     inputRootCustomClasses,
     onChange,
+    placeholder,
     required
   } = props;
 
@@ -66,6 +67,7 @@ function CustomInputTelefone(props) {
           underline: underlineClasses,
         }}
         onChange={onChange}
+        placeholder
         required
         {...inputProps}
       />

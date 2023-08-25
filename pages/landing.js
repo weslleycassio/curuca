@@ -97,7 +97,7 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={0}>
 
               <Button 
-              href="https://wa.me/5511996430891"
+              href="https://api.whatsapp.com/send?phone=5511942980440&text=Quero%20saber%20tudo%20sobre%20o%20Residencial%20Curu%C3%A7a"
               color="warning"
               size="sm"
   
@@ -115,27 +115,6 @@ export default function LandingPage(props) {
               
               </Button>
 
-              {/* <GridItem xs={12} sm={2} md={2} >
-                <Button
-                color="warning"
-                href="https://wa.me/5511996430891"
-                size="md"
-                
-                
-                >
-                
-                <h4>WhatsApp</h4>
-                <img
-                src="img/faces/wpp.png" 
-                alt="wpp"
-                width={50}
-                height={50}
-                
-                className={classes.imgRoundedCircle + " " + classes.imgFluid}
-                />
-                </Button>
-            </GridItem> */}
-            
                 </GridItem>
             </GridItem>
           </GridContainer>

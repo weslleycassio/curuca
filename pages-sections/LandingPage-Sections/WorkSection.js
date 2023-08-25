@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
+import InputMask from 'react-input-mask';
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 import CustomInputEmail from "../../components/CustomInput/CustomInputEmail";
 import CustomInputTelefone from "../../components/CustomInput/CustomInputTelefone";
@@ -21,17 +22,16 @@ export default function WorkSection() {
 
   const onNomeChange = (e) => {
     setConteudo({ ...conteudo, nome: e.target.value });
-    console.log("onNomeChange foi chamado com valor:", e.target.value);
   };
 
   const onEmailChange = (e) => {
     setConteudo({ ...conteudo, email: e.target.value });
-    console.log("onEmailChange foi chamado com valor:", e.target.value);
+
   };
 
   const onTelefoneChange = (e) => {
     setConteudo({ ...conteudo, telefone: e.target.value });
-    console.log("onTelefoneChange foi chamado com valor:", e.target.value);
+
   };
 
   const handleSubmit = async (e) => {
@@ -48,7 +48,6 @@ export default function WorkSection() {
           } 
 
     const  conteudoJson =  JSON.stringify(conteudo);
-    console.log("Conteudo   "  + conteudoJson)
     const formData = new FormData();
     formData.append('nome', conteudo.nome);
     formData.append('email', conteudo.email);
@@ -57,7 +56,7 @@ export default function WorkSection() {
 
     try {
       const response = await fetch(
-        'https://curuca.onrender.com/addRow',
+        'https://form.residencialcuruca.com.br/addRow',
         {
           method: 'POST',
           headers: {
@@ -69,7 +68,7 @@ export default function WorkSection() {
       );
         
       if (response.ok) {
-        window.location.href = "https://dadosenviados.netlify.app"; 
+        alert('formulário com sucesso!');
       } else {
         alert('Erro ao enviar o formulário');
       }
@@ -128,6 +127,7 @@ export default function WorkSection() {
                   onChange={onTelefoneChange}
                   required
                   value={conteudo.telefone}
+                  placeholder="(99) 99999-9999"
                   formControlProps={{
                     fullWidth: true,
                   }}
